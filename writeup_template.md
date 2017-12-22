@@ -73,8 +73,8 @@ To train the model, I used an Adam optimizer with a batch size of 128. I trained
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 0.979
-* validation set accuracy of 0.921
+* training set accuracy of 0.974
+* validation set accuracy of 0.941
 
 ### Test a Model on New Images
 
