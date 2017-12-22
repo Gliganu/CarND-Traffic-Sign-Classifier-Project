@@ -85,6 +85,14 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
+A list of reasons why the new images could be difficult to classify include but are not restricted to:
+
+- Different lighting / orientations than those from the training set
+
+- The cropping around the sign is bigger / smaller than the one in the dataset
+
+- The sign could not be located in the center of the image
+
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
