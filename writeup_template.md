@@ -66,15 +66,35 @@ I normalized the image data in order to bring all the data to the same scale. In
 
 My final model consisted of the classic LeNet-5 architecture, but with 3 color channels instead of just one.
 
+| Layer			        |     Input shape |  Output shape  |
+|:---------------------:|:---------------:|:--------------:|
+| Conv2D                | 32x32x1   	  | 28x28x6        |
+| Max Pooling           | 28x28x6         | 14x14x6        |
+| Conv2D                | 14x14x6         | 10x10x16       |
+| Max Pooling		    | 10x10x16        | 5x5x16         |
+| Flatten               | 5x5x16          | 400            |
+| Fully Connected       | 400             | 120            |
+| Fully Connected       | 120             | 84             |
+| Fully Connected       | 84              | 10             |
+
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an Adam optimizer with a batch size of 128. I trained the network for 100 epochs with a learning rate of 0.001
+To train the model, I used an Adam optimizer with a batch size of 128. I trained the network for 100 epochs with a learning rate of 0.0005
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
 * training set accuracy of 0.974
 * validation set accuracy of 0.941
+
+#What architecture was chosen?
+I chose the LeNet5 architecture, but with 3 color channls instead of just 1.
+
+#Why did you believe it would be relevant to the traffic sign application?
+Because it has been proved to perform quite well on relatively easy image-classification tasks, such as MNIST and this task resembles MNIST in a lot of ways, such as the fact the images are quite small and simple. 
+
+#How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+As the model has reached accuracies of above 93% both on the test and on the validation sets, it has proven able to classify the traffic signs in a wide majority of cases.
 
 ### Test a Model on New Images
 
